@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Actividades</title>
+    <link rel="stylesheet" href="../static/css/styleAct.css">
+</head>
+<body>
+    <h1>Registro de Actividades Talento Tech </h1> <br>
+       <form  action="/registo_act" method="post">
+        <label for="tipo_actividad">Tipo de la Actividad:</label>
+        <input type="text" id="tipo_actividad" name="tipo_actividad" required>
+
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" name="descripcion" required>
+
+        <label for="responsable">Responsable:</label>
+        <input type="text" id="responsable" name="responsable" required>
+		
+		<label for="duracion">Tiempo de la actividad (horas):</label>
+        <input type="text" id="duracion" name="duracion" required>
+
+		<label for="fecha">Fecha Asignacion:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="estado">Estado de la actividad:</label>
+        <input type="text" id="estado" name="estado" required>
+
+        <label for="observaciones">Observaciones:</label>
+        <input type="text" id="observaciones" name="observaciones">
+		
+		<button>Registrar Actividad</button>
+    </form>
+</body>
+</html>
